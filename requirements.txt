@@ -1,0 +1,7 @@
+transformers
+torch 
+spacy
+nltk
+sentence-transformers 
+rogue
+SPARQLWrapper
