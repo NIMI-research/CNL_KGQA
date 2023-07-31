@@ -39,7 +39,6 @@ if __name__ == '__main__':
         processed_ground_truth = post_processing._post_process_squall(ground_truth, gt= True, path =f'{args.path_to_save}squall_to_parse_gt.txt' )
         processed_manual_truth = post_processing._post_process_squall(predictions, gt = False, path =f'{args.path_to_save}squall_to_parse_mt.txt')
         file_name = "./tools/squall2sparql.sh"
-        df_predictions.to_csv(f'{args.path_to_save}{file_name}.txt', header=None, index=None, sep=' ', mode='a')
         squall_to_sparql_tool = squall2sparql(input_final_path = f'{args.path_to_save}squall_to_parse_mt.txt', output_final_path =  f'{args.path_to_save}_squall_parsed_to_sparql.txt')
         parsed_list = parse(f'{args.path_to_save}_squall_parsed_to_sparql.txt', args.test_jsonl_file, args.path_to_prop)._parser_intermediate_sparql()
         SPARQLWrapperUtility.execute(parsed_list,args.args.path_to_save_prediction)
