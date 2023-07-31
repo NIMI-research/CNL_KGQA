@@ -31,7 +31,7 @@ For more detailed instructions, refer to the [OpenAI Fine Tuning Guide](https://
 
 ### 3. LLAMA2
 
-For fine-tuning on custom data using LLAMA2, follow the instructions provided in the [LLAMA2 Dataset Guide](https://github.com/facebookresearch/llama-recipes/blob/main/docs/Dataset.md).
+For fine-tuning on custom data using LLAMA2, follow the instructions provided in the [LLAMA2 Dataset Guide](https://github.com/facebookresearch/llama-recipes/blob/main/docs/Dataset.md) and [LLAMA2 Finetuning](https://github.com/facebookresearch/llama-recipes/#fine-tuning).
 
 
 
