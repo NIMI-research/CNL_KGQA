@@ -1,0 +1,20 @@
+config = {
+    "SPECIAL_TOKENS": {
+        "bos_token": "<|endoftext|>",
+        "eos_token": "<|endoftext|>",
+        "pad_token": "[PAD]",
+        "additional_special_tokens": [
+            "[PROMPT]",
+            "[QUERY]"
+        ]
+    },
+    "TRAIN_DATASET_PATH": "data/mintaka_train.jsonl",
+    "EVAL_DATASET_PATH": "data/mintaka_test.jsonl",
+    "OUTPUT_DIR": "./output",
+    "NUM_TRAIN_EPOCHS": 25,
+    "TRAIN_BATCH_SIZE": 4,
+    "SAVE_STEPS": 10000,
+    "SAVE_TOTAL_LIMIT": 2,
+    "path_to_prop": "data/prop.json",
+    "path_to_id_to_prop": "data/id_to_prop.json"
+}
