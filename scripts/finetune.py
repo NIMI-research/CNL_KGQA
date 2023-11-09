@@ -153,9 +153,10 @@ def train(config, model_name,path_to_save,query_type):
                 block_size=config["BLOCK_SIZE"],
                 query_type=query_type
             )
-
-
-
+    data_collator = DataCollatorForLanguageModeling(
+        tokenizer=tokenizer,
+        mlm=False
+    )
     training_args = TrainingArguments(
         **config["TRAINING_ARGUMENTS"]
     )
